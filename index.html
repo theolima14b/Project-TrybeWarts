@@ -15,7 +15,7 @@
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login">
         <input placeholder="Login" type="text" id="login-trybewarts">
-        <input placeholder="Senha" type="text" id="password-trybewarts">
+        <input placeholder="Senha" type="password" id="password-trybewarts">
         <button id="button-login">Entrar</button>
       </form>
     </header>
@@ -36,7 +36,7 @@
             <label for="input-email" id="label-input-email">Email:
             <input type="email" placeholder="Email" id="input-email">
             </label>
-            <label for="house">Casa:
+            <label for="house">Qual sua casa?
               <select name="house-selected" id="house">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -45,21 +45,22 @@
               </select>
             </label>
         </fieldset>
-        <fieldset class="trybewarts-forms">
-          <div id="label-family">
-            <p>Qual sua família?</p>
-              <label for="front" id="label-front"> Família Frontend
+        <div class="trybewarts-forms">
+          <div id="families">
+            <label for="family" id="label-family">Qual sua família?</label>
+              <label for="front" id="label-front">Frontend
               <input type="radio" id="front" value="Frontend" name="family">
               </label>
-              <label for="back" id="label-back">Família Backend
+              <label for="back" id="label-back">Backend
               <input type="radio" id="back" value="Backend" name="family">
               </label>
-              <label for="full" id="label-full">Família FullStack
+              <label for="full" id="label-full">FullStack
               <input type="radio" id="full" value="FullStack" name="family">
               </label>
           </div>
-          <div id="label-content">
-            <p>Qual conteúdo você está com mais vontade de aprender?</p>
+          <div id="content-checkbox">
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div>
               <label for="hofs">HoFs
                 <input type="checkbox" value="HoFs" id="hofs" class="subject">
                 </label>
@@ -69,6 +70,8 @@
               <label for="promises">Promises
                 <input type="checkbox" value="Promises" id="promises" class="subject">
                 </label>
+              </div>
+              <div>
               <label for="react">React
                 <input type="checkbox" value="React" id="react" class="subject">
                 </label>
@@ -78,8 +81,9 @@
               <label for="python">Python
                 <input type="checkbox" value="Python" id="python" class="subject">
                 </label>
+              </div>
           </div>
-        </fieldset>
+        </div>
 
 
 
