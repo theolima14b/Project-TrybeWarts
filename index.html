@@ -21,21 +21,31 @@
     </header>
 
     <main class="main-content">
-        <form id="evaluation-form">
-          <label for="input-name">Nome:</label>
-          <input type="text" placeholder="Nome" id="input-name">
-          <label for="input-lastname">Sobrenome:</label>
-          <input type="text" placeholder="Sobrenome" id="input-lastname">
-          <label for="input-email">Email:</label>
+      <form id="evaluation-form">
+        <fieldset class="fieldset-fullname">
+          <legend class="legend-fullname">Dados Pessoais:</legend>
+            <label for="input-name" id="input-name">Nome:
+            <input type="text" placeholder="Nome" id="input-name">
+            </label>
+            <label for="input-lastname" id="input-lastname">Sobrenome:
+            <input type="text" placeholder="Sobrenome" id="input-lastname">
+            </label>
+        </fieldset>
+      <fieldset class="fieldset-email-house">
+        <legend class="legend-email-house">Email e Casa</legend>
+          <label for="input-email" id="input-email">Email:
           <input type="email" placeholder="Email" id="input-email">
-        </form>
-        <select name="house-selected" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-        
+          </label>
+      </form>
+        <label for="house">Casa:
+          <select name="house-selected" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
+      </fieldset>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Colored">
     </main>
 
