@@ -6,12 +6,30 @@
 
 .header {
   background-color: rgb(50, 167, 145);
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  height: 100px;
+}
+
+.trybewarts-header-title {
+  margin: 0 auto;
 }
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trybewarts-login input, button {
+  margin-right: 10px;
+  padding: 7px;
 }
 
 .main-content {
@@ -24,6 +42,13 @@
   flex-direction: column;
 }
 
+#house {
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.houses-trybewarts {
+  display: flex;
 }
