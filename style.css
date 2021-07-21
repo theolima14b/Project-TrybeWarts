@@ -9,6 +9,7 @@
   height: 100px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -23,6 +24,7 @@
 
 .trybewarts-login {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -34,11 +36,13 @@
 
 .main-content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main-content form {
   display: flex;
   width: 675px;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -47,14 +51,14 @@
   height: 500px;
 }
 
-#input-name {
+#label-input-name {
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 45px;
+  margin-right: 60px;
 }
 
 #input-lastname {
   margin-bottom: 15px;
-  margin-left: 15px;
 }
 
 .legend-fullname {
@@ -67,12 +71,27 @@
   padding: 10px;
 }
 
-#input-email {
+#label-input-email {
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 45px;
   margin-right: 60px;
 }
 
 #house {
-  margin-bottom: 15px;
+  width: 34%;
+}
+
+.trybewarts-forms {
+  display: flex;
+  justify-content: space-between;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-to-learn{
+  display: flex;
+  flex-direction: column;
 }

@@ -24,29 +24,68 @@
       <form id="evaluation-form">
         <fieldset class="fieldset-fullname">
           <legend class="legend-fullname">Dados Pessoais:</legend>
-            <label for="input-name" id="input-name">Nome:
+            <label for="input-name" id="label-input-name">Nome:
             <input type="text" placeholder="Nome" id="input-name">
             </label>
-            <label for="input-lastname" id="input-lastname">Sobrenome:
+            <label for="input-lastname" id="label-input-lastname">Sobrenome:
             <input type="text" placeholder="Sobrenome" id="input-lastname">
             </label>
         </fieldset>
-      <fieldset class="fieldset-email-house">
-        <legend class="legend-email-house">Email e Casa</legend>
-          <label for="input-email" id="input-email">Email:
-          <input type="email" placeholder="Email" id="input-email">
-          </label>
+        <fieldset class="fieldset-email-house">
+          <legend class="legend-email-house">Email e Casa</legend>
+            <label for="input-email" id="label-input-email">Email:
+            <input type="email" placeholder="Email" id="input-email">
+            </label>
+            <label for="house">Casa:
+              <select name="house-selected" id="house">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+              </select>
+            </label>
+        </fieldset>
+        <fieldset class="trybewarts-forms">
+          <div id="label-family">
+            <p>Qual sua família?</p>
+              <label for="front" id="label-front"> Família Frontend
+              <input type="radio" id="front" value="Frontend" name="family">
+              </label>
+              <label for="back" id="label-back">Família Backend
+              <input type="radio" id="back" value="Backend" name="family">
+              </label>
+              <label for="full" id="label-full">Família FullStack
+              <input type="radio" id="full" value="FullStack" name="family">
+              </label>
+          </div>
+          <div id="label-content">
+            <p>Qual conteúdo você está com mais vontade de aprender?</p>
+              <label for="hofs">HoFs
+                <input type="checkbox" value="HoFs" id="hofs" class="subject">
+                </label>
+              <label for="jest">Jest
+                <input type="checkbox" value="Jest" id="jest" class="subject">
+                </label>
+              <label for="promises">Promises
+                <input type="checkbox" value="Promises" id="promises" class="subject">
+                </label>
+              <label for="react">React
+                <input type="checkbox" value="React" id="react" class="subject">
+                </label>
+              <label for="sql">SQL
+                <input type="checkbox" value="SQL" id="sql" class="subject">
+                </label>
+              <label for="python">Python
+                <input type="checkbox" value="Python" id="python" class="subject">
+                </label>
+          </div>
+        </fieldset>
+
+
+
       </form>
-        <label for="house">Casa:
-          <select name="house-selected" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
-        </label>
-      </fieldset>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Colored">
+
     </main>
 
   <script src="script.js"></script>
