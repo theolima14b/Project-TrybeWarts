@@ -42,7 +42,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  
 }
 
 .main-content form {
@@ -52,7 +51,6 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-right: 5%;
-  
 }
 
 fieldset {
@@ -100,7 +98,7 @@ fieldset {
   justify-content: space-between;
 }
 
-#families{
+#families {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -108,10 +106,10 @@ fieldset {
   margin-left: 5%;
 }
 
-#content-checkbox{
+#content-checkbox {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
