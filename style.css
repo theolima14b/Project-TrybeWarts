@@ -47,7 +47,6 @@
 .main-content form {
   display: flex;
   width: 675px;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   margin-right: 5%;
@@ -108,8 +107,7 @@ fieldset {
 
 #content-checkbox {
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
