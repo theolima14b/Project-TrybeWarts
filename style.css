@@ -164,3 +164,8 @@ textarea {
   align-items: flex-end;
   margin-top: 10%;
 }
+
+.after-submit {
+  margin-bottom: 30px;
+  background-color: red;
+}
