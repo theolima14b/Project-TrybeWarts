@@ -2,7 +2,7 @@ const login = document.getElementById('login-trybewarts');
 const password = document.getElementById('password-trybewarts');
 const button = document.getElementById('button-login');
 const submitButton = document.getElementById('submit-btn');
-const agreement = document.querySelector('#agreement');
+const agreement = document.getElementById('agreement');
 
 const checkLoginData = () => {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
