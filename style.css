@@ -145,3 +145,9 @@ textarea {
 #label-infos {
   margin-right: 15px;
 }
+
+.submit-button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
