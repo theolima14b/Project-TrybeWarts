@@ -110,7 +110,7 @@ fieldset {
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .rate-trybewarts {
@@ -133,4 +133,15 @@ textarea {
   resize: none;
   width: 675px;
   height: 107px;
+}
+
+.agreed-info {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#label-infos {
+  margin-right: 15px;
 }

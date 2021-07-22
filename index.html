@@ -23,7 +23,7 @@
     <main class="main-content">
       <form id="evaluation-form">
         <fieldset class="fieldset-fullname">
-          <legend class="legend-fullname">Dados Pessoais:</legend>
+          <legend class="legend-fullname">Nome Completo:</legend>
             <label for="input-name" id="label-input-name">Nome:
               <input type="text" placeholder="Nome" id="input-name">
             </label>
@@ -32,7 +32,7 @@
             </label>
         </fieldset>
         <fieldset class="fieldset-email-house">
-          <legend class="legend-email-house">Email e Casa</legend>
+          <legend class="legend-email-house">Email e Casa:</legend>
             <label for="input-email" id="label-input-email">Email:
               <input type="email" placeholder="Email" id="input-email">
             </label>
@@ -119,9 +119,13 @@
         </div>
         <div class="textarea-trybewarts">
           <label for="textarea" class="textarea">Deixe seu comentário:
-            <textarea name="textarea" id="textarea" maxlength="500" placeholder="Resuma em até 500 caracteres..."></textarea>
+            <textarea name="textarea" id="textarea" maxlength="500" placeholder=" Resuma em até 500 caracteres..."></textarea>
           </label>
+        </div>
 
+        <div class="agreed-info">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" id="agreement" required>
         </div>
 
 
