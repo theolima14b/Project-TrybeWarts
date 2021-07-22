@@ -112,3 +112,12 @@ fieldset {
   justify-content: space-between;
   padding: 15px;
 }
+
+.rate-trybewarts {
+  margin-top: 15px;
+  border: 1px solid black;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
