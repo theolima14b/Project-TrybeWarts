@@ -3,6 +3,8 @@ const password = document.getElementById('password-trybewarts');
 const button = document.getElementById('button-login');
 const submitButton = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
+const message = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
 
 const checkLoginData = () => {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
@@ -23,3 +25,10 @@ const enableButton = () => {
 };
 
 agreement.addEventListener('click', enableButton);
+
+const countChar = () => {
+  const currentLength = message.value.length;
+  counter.innerText = 500 - currentLength;
+};
+
+message.addEventListener('keyup', countChar);

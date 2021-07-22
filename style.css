@@ -126,7 +126,13 @@ fieldset {
 .textarea-trybewarts {
   margin-top: 15px;
   display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+#counter {
+  align-self: flex-end;
+  color: #666;
 }
 
 textarea {
