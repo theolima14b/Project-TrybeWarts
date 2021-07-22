@@ -100,7 +100,7 @@ fieldset {
 #families {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
   margin-left: 5%;
 }
@@ -132,7 +132,7 @@ fieldset {
 
 #counter {
   align-self: flex-end;
-  color: #8d8c8c;
+  color: rgb(161, 158, 158);
 }
 
 textarea {
