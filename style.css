@@ -81,13 +81,13 @@ fieldset {
 }
 
 #label-input-email {
-  margin-bottom: 15px;
   margin-left: 45px;
   margin-right: 60px;
 }
 
 #house {
   width: 25%;
+  margin-bottom: 15px;
 }
 
 .trybewarts-forms {
@@ -114,10 +114,23 @@ fieldset {
 }
 
 .rate-trybewarts {
+  padding: 15px 0;
   margin-top: 15px;
   border: 1px solid black;
   height: 10%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.textarea-trybewarts {
+  margin-top: 15px;
+  display: flex;
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+  width: 675px;
+  height: 107px;
 }
