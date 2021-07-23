@@ -5,15 +5,14 @@ const submitButton = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
 const message = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
+
 // Para o botão Submit:
+
 const firstName = document.getElementById('input-name');
 const lastName = document.getElementById('input-lastname');
 const email = document.getElementById('input-email');
 const form = document.querySelector('#evaluation-form');
 const house = document.getElementById('house');
-const family = document.getElementById('label-family');
-const classes = document.getElementsByClassName('.subject');
-const rate = document.getElementById('label-rate');
 
 const checkLoginData = () => {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
@@ -42,62 +41,94 @@ const countChar = () => {
 
 message.addEventListener('keyup', countChar);
 
+// Requisito 21 - Nome completo:
+
 const createNewName = () => {
   const newName = document.createElement('h2');
   const fullName = `${firstName.value} ${lastName.value}`;
   form.appendChild(newName);
   newName.innerText = `Nome: ${fullName}`;
-  newName.classList.add('after-submit');
 };
+
+// Requisito 21 - Email:
 
 const createNewMail = () => {
   const newMail = document.createElement('h2');
   const mail = email.value;
   form.appendChild(newMail);
   newMail.innerText = `Email: ${mail}`;
-  newMail.classList.add('after-submit');
 };
+
+// Requisito 21 - Casa:
 
 const createNewHouse = () => {
   const newHouse = document.createElement('h2');
   const yourHouse = house.value;
   form.appendChild(newHouse);
   newHouse.innerText = `Casa: ${yourHouse}`;
-  newHouse.classList.add('after-submit');
 };
+
+// Requisito 21 - Família:
+
+let valueFamily = '';
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  valueFamily = (form.family.value);
+});
 
 const createNewFamily = () => {
   const newFamily = document.createElement('h2');
-  const yourFamily = 'TESTE'; // ACERTAR - ADICIONAR CHECKED AO ELEMENTO - PEGAR O VALUE DO ELEMENTO CHECKED//
+  const yourFamily = valueFamily;
   form.appendChild(newFamily);
   newFamily.innerText = `Família: ${yourFamily}`;
-  newFamily.classList.add('after-submit');
+};
+
+// Requisito 21 - Matérias:
+const classes = document.querySelectorAll('.subject');
+
+const giveClasses = () => {
+  let list = '';
+  for (let index = 0; index < classes.length; index += 1) {
+    if (classes[index].checked) {
+      list += `${classes[index].value}, `;
+    }
+  }
+  return list;
 };
 
 const createNewClasses = () => {
   const newClasses = document.createElement('h2');
-  const yourClasses = 'TESTE'; // ACERTAR - ADICIONAR CHECKED AOS ELEMENTOS - PEGAR O VALUE DOS ELEMENTOS CHECKEDS//
+  const yourClasses = giveClasses();
   form.appendChild(newClasses);
   newClasses.innerText = `Matérias: ${yourClasses}`;
-  newClasses.classList.add('after-submit');
   newClasses.classList.add('subject');
 };
 
+// Requisito 21 - Avaliação:
+
+let valueRate = '';
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  valueRate = (form.rate.value);
+});
+
 const createNewReview = () => {
   const newReview = document.createElement('h2');
-  const yourReview = 'TESTE'; // ACERTAR - ADICIONAR CHECKED AO ELEMENTO - PEGAR O VALUE DO ELEMENTO CHECKED//
+  const yourReview = valueRate;
   form.appendChild(newReview);
   newReview.innerText = `Avaliação: ${yourReview}`;
-  newReview.classList.add('after-submit');
 };
+
+// Requisito 21 - Observações:
 
 const createNewObs = () => {
   const newObs = document.createElement('h2');
   const yourMessage = message.value;
   form.appendChild(newObs);
   newObs.innerText = `Observações: ${yourMessage}`;
-  newObs.classList.add('after-submit');
 };
+
+// Requisito 21 - Faz a mágica acontecer:
 
 const resumedForm = () => {
   form.innerHTML = '';
@@ -111,8 +142,3 @@ const resumedForm = () => {
 };
 
 submitButton.addEventListener('click', resumedForm);
-
-// Deve haver um campo com o formato "Família: Família Escolhida"
-// Deve haver um campo com o formato "Matérias: Matérias, Marcadas, Aqui"
-// Deve haver um campo com o formato "Avaliação: NotaAqui"
-// Deve haver um campo com o formato "Observações: Observações aqui"
