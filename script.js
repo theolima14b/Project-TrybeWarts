@@ -132,6 +132,7 @@ const createNewObs = () => {
 
 const resumedForm = () => {
   form.innerHTML = '';
+  form.classList.add('display-form');
   createNewName();
   createNewMail();
   createNewHouse();
